@@ -20,18 +20,12 @@ body {
     background-color: #F0F1F3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 700px 400px;
-    grid-template-areas: 'titulo titulo' 'formProducto listadoProds' 'chat listadoProds';
-}
-
-.titulo {
-    grid-area: titulo;
-    padding-top: 70px;
-    background-image: url('./fondo.jpg');
-    height: 200px;
+    grid-template-rows:  700px 400px;
+    grid-template-areas:'formProducto listadoProds' 'chat listadoProds';
 }
 
 .formProducto {
+    padding-top: 70px;
     grid-area: formProducto;
 }
 
@@ -40,9 +34,10 @@ body {
 }
 
 .listadoProds {
+    padding-top: 70px;
     grid-area: listadoProds;
 }
 
 .p {
-    font-weight: bold;
+    font-weight: regular;
 }

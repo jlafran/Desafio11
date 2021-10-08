@@ -12,18 +12,15 @@
 </head>
 
 <body>
-    <div class="titulo">
-        <h1>DESAFIO 8 - Sockets con Knex</h1>
-    </div>
     <!-- TABLA DE PRODUCTOS: -->
     <div class="listadoProds">
         <table class="table table-striped">
-            <h2>Lista de productos</h2>
+            <h2>Product List</h2>
             <thead>
                 <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Foto</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Picture</th>
                 </tr>
             </thead>
             <tbody id="productsTable"></tbody>
@@ -31,22 +28,22 @@
     </div>
     <!-- CREAR PRODUCTO -->
     <div class='mb-3 formProducto'>
-        <h2>Alta de producto:</h2>
+        <h2>Product Registration:</h2>
         <form id="formulario">
             <div class="mb-3">
-                <label for="title" class="form-label p">Titulo:</label>
+                <label for="title" class="form-label p">Title:</label>
                 <input type="text" class="form-control" name="title" id="title">
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label p">Descripcion:</label>
+                <label for="description" class="form-label p">Description:</label>
                 <input type="text" class="form-control" name="description" id="description">
             </div>
             <div class="mb-3">
-                <label for="code" class="form-label p">Codigo:</label>
+                <label for="code" class="form-label p">Code:</label>
                 <input type="text" class="form-control" name="code" id="code">
             </div>
             <div class="mb-3">
-                <label for="price" class="form-label p">Precio:</label>
+                <label for="price" class="form-label p">Price:</label>
                 <input type="number" class="form-control" name="price" id="price">
             </div>
             <div class="mb-3">
@@ -54,10 +51,10 @@
                 <input type="number" class="form-control" name="stock" id="stock">
             </div>
             <div class="mb-3">
-                <label for="thumbnail" class="form-label p">URL de imagen:</label>
+                <label for="thumbnail" class="form-label p">Thumbnail URL:</label>
                 <input type="text" class="form-control" name="thumbnail" id="thumbnail">
             </div>
-            <button id="productSend" class="btn btn-secondary" type="submit">ENVIAR</button>
+            <button id="productSend" class="btn btn-secondary" type="submit">Send</button>
         </form>
     </div>
 
@@ -65,15 +62,15 @@
     <div id="chat" class="chat">
         <h2>Chat</h2>
         <div class="mb-3 userInfo">
-            <label class="form-label p" for="user">Usuario:</label>
+            <label class="form-label p" for="user">User:</label>
             <input class="form-control" type="text" id="user" placeholder="Nombre de usuario...">
         </div>
         <form id="messageForm">
             <div class="mb-3">
-                <label class="form-label p" for="msg">Mensaje:</label>
+                <label class="form-label p" for="msg">Message:</label>
                 <input class="form-control" id="msg" type="text" placeholder="Escribí un mensaje...">
             </div>
-            <button id="send" class="btn btn-secondary" type="submit">ENVIAR</button>
+            <button id="send" class="btn btn-secondary" type="submit">Send</button>
         </form>
         <hr>
         <div id="mensajes"></div>
